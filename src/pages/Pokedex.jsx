@@ -4,7 +4,7 @@ import { useSelector } from "react-redux"
 import PokeContainer from "../components/Pokedex/PokeContainer"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
-import './styles/Pokedex.css'
+import './styles/pokedex.css'
 
 
 const Pokedex = () => {
