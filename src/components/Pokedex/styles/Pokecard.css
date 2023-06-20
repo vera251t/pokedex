@@ -1,0 +1,200 @@
+.pokecard {
+    width: 100%;
+    max-width: 324px;
+    font-size: 1rem;
+    border-radius: 0.8em;
+    margin: 0 auto;
+    border: 0.5em solid currentColor;
+    cursor: pointer;
+    transition: transform 150ms ease;
+}
+
+.pokecard:hover {
+    transform: scale(1.05);
+}
+
+.pokecard__header {
+    aspect-ratio: 2;
+    position: relative;
+    background-color: currentColor;
+}
+
+.pokecard__img {
+    position: absolute;
+    width: 60%;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pokecard__body {
+    padding-top: 3em;
+}
+
+.pokecard__name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+
+.pokecard__t {
+    text-align: center;
+    padding: 0.3rem;
+}
+.pokecard__types {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    color: black;
+}
+
+.pokecard__types-item {
+    text-transform: capitalize;
+    position: relative;
+}
+
+.pokecard__types-item:nth-child(2)::before {
+    content: '/';
+    position: absolute;
+    left: -1em;
+}
+
+.pokecard__types-item:first-child::before {
+    content: '';
+}
+
+hr {
+    background-color: gray;
+    width: 270px;
+}
+.pokecard__stats {
+    padding: 0.5em 0.5em 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1em 0.2em;
+}
+
+.pokecard__stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.pokecard__stats-label {
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: black;
+}
+
+.pokecard__stats-value {
+    font-size: 1.1rem;
+}
+
+.fire {
+    color: rgb(203, 155, 38);
+}
+.bg-fire {
+    background-image: linear-gradient(0deg, rgba(248,157,13,1) 0%, rgba(196,84,21,1) 100%);
+}
+.water {
+    color: rgb(53, 131, 233);
+}
+.bg-water {
+    background-image: linear-gradient(0deg, rgba(13,248,243,1) 0%, rgba(7,160,139,1) 100%);;
+}
+.bug {
+    color: #88CA77;
+}
+.bg-bug {
+    background-image: linear-gradient(0deg, rgba(146,248,13,1) 0%, rgba(111,159,16,1) 100%);;
+}
+.grass {
+    color: rgb(93, 171, 62);;
+}
+.bg-grass {
+    background-image: linear-gradient(0deg, rgba(88,255,75,1) 8%, rgba(17,122,82,1) 100%);
+}
+.normal {
+    color: #8E5D68;
+}
+.bg-normal {
+    background-image: linear-gradient(0deg, rgba(142,93,104,1) 0%, rgba(159,16,66,1) 100%);;
+}
+.electric {
+    color: rgb(241, 138, 19);
+}
+.bg-electric {
+    background-image: linear-gradient(0deg, rgba(212,149,57,1) 0%, rgba(190,101,14,1) 100%);
+}
+.fighting {
+    color: #C24E31;
+}
+.bg-fighting {
+    background-image: linear-gradient(0deg, rgba(194,78,49,1) 0%, rgba(219,116,15,1) 100%);;
+}
+.rock {
+    color: #989899;
+}
+.bg-rock {
+    background-image: linear-gradient(0deg, rgba(152,152,153,1) 0%, rgba(108,117,159,1) 100%);;
+}
+.poison {
+    color: #9665C5;
+}
+.bg-poison {
+    background-image: linear-gradient(0deg, rgba(150,101,197,1) 0%, rgba(130,43,168,1) 100%);;
+}
+.ghost {
+    color: #474CA5;
+}
+.bg-ghost {
+    background-image: linear-gradient(0deg, rgba(71,76,165,1) 0%, rgba(11,19,132,1) 100%);;
+}
+.dragon {
+    color: #6BB1BA;
+}
+.bg-dragon {
+    background-image: linear-gradient(0deg, rgba(107,177,186,1) 0%, rgba(12,159,134,1) 100%);;
+}
+.ground {
+    color: #3036aa;
+}
+.bg-ground {
+    background-image: linear-gradient(0deg, rgba(48,54,170,1) 0%, rgba(12,33,159,1) 100%);;
+}
+.steel {
+    color: #962a0f;
+}
+.bg-steel {
+    background-image: linear-gradient(0deg, rgba(150,42,15,1) 0%, rgba(228,104,19,1) 100%);;
+}
+.psychic {
+    color: #d19d10;
+}
+.bg-psychic {
+    background-image: linear-gradient(0deg, rgba(209,157,16,1) 0%, rgba(167,93,12,1) 100%);;
+}
+.ice {
+    color: #07d291;
+}
+.bg-ice {
+    background-image: linear-gradient(0deg, rgba(7,210,145,1) 0%, rgba(5,140,85,1) 100%);
+}
+.dark {
+    color: #9a9279;
+}
+.bg-dark {
+    background-image: linear-gradient(0deg, rgba(154,146,121,1) 0%, rgba(86,94,91,1) 100%);;
+}
+.fairy {
+    color: #5e3840;
+}
+.bg-fairy {
+    background-image: linear-gradient(0deg, rgba(94,56,64,1) 0%, rgba(145,52,75,1) 100%);;
+}
+.bg-flying {
+    background-image: linear-gradient(0deg, rgba(214,11,204,1) 0%, rgba(113,6,95,1) 100%);;
+}

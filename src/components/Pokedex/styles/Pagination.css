@@ -1,0 +1,43 @@
+.container__pag {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 3rem 0;
+}
+
+.container__pag button {
+    width: 90px;
+    background-color: #DD1A1A;
+    padding: 0.7rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(0.5);
+}
+
+.container__pag button[disabled] {
+    cursor: no-drop;
+}
+
+.container__pag button:hover {
+    filter: grayscale(0);
+}
+
+.container__pag input {
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #242424;
+    border-radius: 3px;
+}
+@media (min-width: 700px) {
+    .container__pag {
+        width: 400px;
+        margin-left: 20rem;
+    }
+}

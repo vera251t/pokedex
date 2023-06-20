@@ -1,0 +1,15 @@
+.pokecard__map {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1.5rem;
+}
+
+@media (min-width: 700px) {
+    .pokecard__map {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    hr {
+        width: 190px;
+    }
+}
