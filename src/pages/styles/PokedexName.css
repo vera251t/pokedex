@@ -272,6 +272,9 @@
         width: 550px;
         height: 14px;
     }
+    .poke__progreso {
+        height: 14px;
+    }
     .poke__footer {
         width: 620px;
     } 
