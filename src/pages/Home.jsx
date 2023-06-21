@@ -25,7 +25,7 @@ const Home = () => {
         <h2 className="pokedex__title">Hi Trainer!</h2>
         <p className="pokedex__description">To start in this application please give me your trainer name</p>
         <form className="pokedex__form" onSubmit={handleSubmit}>
-            <input class="pokedex__input" ref={trainerNameRef} type="text" placeholder="Enter your name" />
+            <input className="pokedex__input" ref={trainerNameRef} type="text" placeholder="Enter your name" />
             <button className="pokedex__btn">Catch them all!</button>
         </form>
       </div>

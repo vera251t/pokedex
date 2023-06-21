@@ -9,9 +9,9 @@
 
 .container__pag button {
     width: 90px;
-    background-color: #DD1A1A;
+    background-color: var(--color-5);
     padding: 0.7rem;
-    color: white;
+    color: var(--color-1);
     border: none;
     cursor: pointer;
     display: flex;

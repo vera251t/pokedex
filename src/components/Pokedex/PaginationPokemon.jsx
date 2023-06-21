@@ -12,17 +12,21 @@ const PaginationPokemon = ({ pagina, setPagina, maximo }) => {
     setPagina(parseInt(pagina) - 1)
   }
   const onKeyDown = e => {
-    if(e.keyCode === 13) {
-      setPagina(parseInt(e.target.value))
-      if(
-        parseInt(e.target.value < 1) ||
-        parseInt(e.target.value) > Math.ceil(maximo) ||
-        isNaN(parseInt(e.target.value))
-      ) {
-          setPagina(1)
-          setInput(1)
+    if (e.keyCode === 13) {
+      const parsedValue = parseInt(e.target.value);
+  
+      if (parsedValue === 0) {
+        e.preventDefault();
+        return;
+      }
+  
+      setPagina(parsedValue);
+  
+      if (parsedValue < 1 || parsedValue > Math.ceil(maximo) || isNaN(parsedValue)) {
+        setPagina(1);
+        setInput(1);
       } else {
-        setPagina(parseInt8e.target.value)
+        setInput(parsedValue);
       }
     }
   }

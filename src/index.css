@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --color-1: white;
+    --color-2: black;
+    --color-3: gray;
+    --color-4: #FE1936;
+    --color-5: #DD1A1A;
+    --color-6: #D93F3F;
+}
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -8,13 +18,14 @@ h1, h2, h3, h4, p, ul {
     margin-top: 0;
     margin-bottom: 0;
 }
-
 ul {
     padding-left: 0;
     list-style: none;
 }
-
 img {
     width: 100%;
     display: block;
+}
+input, button {
+    font-family: inherit;
 }

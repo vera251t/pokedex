@@ -24,7 +24,7 @@ const PokedexName = () => {
         </header>
         {
             hasError
-                ? <h1>The pokemon <span>{name}</span> doesn't exist</h1>
+                ? <h1 className="pokedex__err">The pokemon <span>{name}</span> doesn't exist 😭</h1>
                 : (
                     <>
                         <div className="poke__div"></div>
@@ -71,7 +71,7 @@ const PokedexName = () => {
                                                 <span className="poke__container-name">{statInfo.stat.name}:</span>
                                                 <span>{statInfo.base_stat} / 150</span>
                                                 <div className="poke__barra">
-                                                    <div className="poke__progreso" style={{ width: `${statInfo.base_stat}%` }}></div>
+                                                    <div className="poke__progreso" style={{ width: `calc(${statInfo.base_stat} / 150 * 100%)` }}></div>
                                                 </div>
                                             </li>
                                         ))
