@@ -69,9 +69,9 @@ const PokedexName = () => {
                                         pokemon?.stats.map(statInfo => (
                                             <li className="poke__container-stats" key={statInfo.stat.url}>
                                                 <span className="poke__container-name">{statInfo.stat.name}:</span>
-                                                <span>{statInfo.base_stat} / 150</span>
+                                                <span>{statInfo.base_stat} / 255</span>
                                                 <div className="poke__barra">
-                                                    <div className="poke__progreso" style={{ width: `calc(${statInfo.base_stat} / 150 * 100%)` }}></div>
+                                                    <div className="poke__progreso" style={{ width: `calc(${statInfo.base_stat} / 255 * 100%)` }}></div>
                                                 </div>
                                             </li>
                                         ))
