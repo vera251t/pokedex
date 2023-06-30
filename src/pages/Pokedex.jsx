@@ -5,6 +5,7 @@ import PokeContainer from "../components/Pokedex/PokeContainer"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 import './styles/pokedex.css'
+import Loading from "../components/Pokedex/Loading"
 
 
 const Pokedex = () => {
@@ -14,7 +15,7 @@ const Pokedex = () => {
   const trainerName = useSelector(states => states.trainerName)
 
   let url = 'https://pokeapi.co/api/v2/pokemon?limit=900&offset=0'
-  const [ pokemons, getAllPokemons, hasError, setPokemons ] = useFetch(url)
+  const [ pokemons, getAllPokemons, hasError, setPokemons, isLoading ] = useFetch(url)
   const urlTypes = 'https://pokeapi.co/api/v2/type'
   const [ types, getAllTypes ] = useFetch(urlTypes)
 
@@ -74,7 +75,11 @@ const Pokedex = () => {
               ))
             }
           </select>
-          <PokeContainer pokemons={pokemons?.results}/>
+          {
+            isLoading
+            ? <Loading />
+            : <PokeContainer pokemons={pokemons?.results}/>
+          }
         </section>
       </div>
     </>
